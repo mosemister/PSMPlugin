@@ -1,0 +1,8 @@
+name: PSMPlugin
+version: ${project.version}
+main: colonelkai.psmplugin.PSMPlugin
+api-version: 1.15
+prefix: PSMPlugin
+authors: [ ColonelKai ]
+description: Plugin for the Political SMP server.
+website: https://politicalsmp.enjin.com/
