@@ -1,4 +1,4 @@
-package colonelkai.psmplugin.battlesession;
+package colonelkai.psmplugin.psmbattle;
 
 import colonelkai.psmplugin.plugin.Values;
 import org.bukkit.event.EventHandler;
@@ -7,7 +7,6 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class BattleListener {
 

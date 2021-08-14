@@ -1,8 +1,7 @@
-package colonelkai.psmplugin.battlesession;
+package colonelkai.psmplugin.psmbattle;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.UUID;
 
 public class BattleSession {
     private Set<BattleUser> sideA = new HashSet<>();

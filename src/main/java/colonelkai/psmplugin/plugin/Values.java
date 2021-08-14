@@ -1,6 +1,6 @@
 package colonelkai.psmplugin.plugin;
 
-import colonelkai.psmplugin.battlesession.BattleSession;
+import colonelkai.psmplugin.psmbattle.BattleSession;
 import org.bukkit.ChatColor;
 
 public interface Values {

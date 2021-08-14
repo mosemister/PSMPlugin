@@ -1,4 +1,4 @@
-package colonelkai.psmplugin.battlesession;
+package colonelkai.psmplugin.psmbattle;
 
 import colonelkai.psmplugin.plugin.Values;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -12,6 +12,7 @@ public class BattleUser {
     private UUID uuid;
     private String username;
     private int deathCount;
+    private boolean dead;
 
     public void die(PlayerDeathEvent e) {
         this.deathCount += 1;
@@ -21,10 +22,19 @@ public class BattleUser {
             // oh boy you're fucked
             Bukkit.broadcast(new TextComponent(Values.prefix + e.getEntity().getName() + " has died 3 times and is out of the battle."));
             // TODO: Ask tim what happens when you die 3 times.
+            this.dead = true;
         }
     }
 
     // region GETTERS AND SETTERS
+    public boolean isDead() {
+        return dead;
+    }
+
+    public void setDead(boolean dead) {
+        this.dead = dead;
+    }
+
     public UUID getUuid() {
         return uuid;
     }
